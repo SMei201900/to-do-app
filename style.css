@@ -1,3 +1,13 @@
 body {
 	background-color: #7cb9e8;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
+
+/*margin is orange; padding is green
+16px means 1em and 1rem
+display:flex moves elements to be side-by-side of each other 
+*/
