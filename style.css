@@ -60,8 +60,16 @@ ul li {
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
-
 }
+
+ul li:: before{ /*li::before allows me to add stuff BEFORE li*/
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+}
+
+
 
 
     
