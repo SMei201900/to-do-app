@@ -3,35 +3,45 @@
     min-height:100vh;
     background: linear-gradient(90deg, #faf0cd, #fab397);
     padding: 10px;
-    }
+}
     
     
-    .toDoApp {
-        width: 100%;
-        max-width:540px;
-        background: #fff;
-        margin: 100px auto 20px; /*top --> left + right --> bottom */
-        padding: 40px 30px 70px;
-        border-radius: 10px; /* to make corners round*/
-    }
+.toDoApp {
+    width: 100%;
+    max-width:540px;
+    background: #fff;
+    margin: 100px auto 20px; /*top --> left + right --> bottom */
+    padding: 40px 30px 70px;
+    border-radius: 10px; /* to make corners round*/
+ }
     
     
-    .toDoApp h2 {
-        color: #002765;
-        display: flex; /*for aligning */
-        align-items: center;
-        margin-bottom: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+.toDoApp h2 {
+    color: #002765;
+    display: flex; /*for aligning */
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
     
     
-    .row { /*CSS for search bar where we type in to add something new to the list*/
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #edeef0;
-        border-radius: 30px;
-        padding-left: 20px;
-        margin-bottom: 25px;
-    }
+.row { /*CSS for search bar where we type in to add something new to the list*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;  
+}
+
+
     
