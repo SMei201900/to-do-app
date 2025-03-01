@@ -43,5 +43,14 @@ input {
     padding: 10px;  
 }
 
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px; /* tpp + bottom --> left + right */
+    color: #fff; /*text color when we type into search bar*/
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
     
