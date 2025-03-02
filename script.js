@@ -12,7 +12,7 @@ function addTask() {
     }                       //if inputBox is empty then pop-up "You must write something" 
     else {
         let li = document.createElement("li");
-        li.innerHTML = inputBox.addEventListener;
+        li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
     }
     /* 
@@ -22,12 +22,25 @@ function addTask() {
     
     li.innerHTML refers to the content inside the <li> element 
     inputBox.addEventListener is written so that the contents of the li can be changed
-    HOWEVER addEventListener is a function so we are still missing something
 
     listContainer is referencing the id found in the HTML document 
     appendChild adds the newly created <li> as a child to the listContainer element 
     THUS allowing it to be displayed
     
+    */
+    
+    /*
+    let li = document.createElement("li"); 
+        It is creating one HTML element with the tag name "li" 
+        It is storing this element in this "li" variable 
+
+    li.innerHTML = inputBox.addEventListener; 
+        The text that we added into the input field is inputBox.value 
+        We are storing that into li.innerHTML 
+    
+    listContainer.appendChild(li);
+        We have to display this li
+        We want it to be displayed under the section with the id "list-container" 
     */
 }
 
