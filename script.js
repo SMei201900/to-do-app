@@ -9,7 +9,7 @@ const listContainer = document.getElementById("list-container");
 function addTask() {
     if (inputBox.value === '') {
         alert("Error! You must write something!");
-    }                       //if inputBox is empty then pop-up "You must write something" 
+    }                       //if inputBox is empty then pop-up "Error" 
     else {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
@@ -17,8 +17,8 @@ function addTask() {
         /*        */
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
-    /* 
     
     inputBox.value = ""; /* Allows search box to be empty */
 

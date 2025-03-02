@@ -17,7 +17,22 @@ listContainer.appendChild(li);
     appendChild adds the newly created <li> as a child to the listContainer element 
         We want it to be displayed under the section with the id "list-container" 
 
-
-
-
 -->
+
+<!--
+let span = document.createElement("span");
+    We create a variable called "span"
+    We set its value to create an element called "span" aka <span>
+        <span> is an element used to group elements 
+
+span.innerHTML = "\u00d7";
+    span.innerHTML refers to the content of the newly created <span> element 
+    \u00d7 is a unicode to represent the multipcation sign or the "x" symbol 
+        Essentially here we are creating the "x out" 
+        like the "x out" on a web browser when we want to close a tab 
+    We set the newly created <span> element to be this "x" symbol
+
+li.appendChild(span);
+    We attach the newly created <span> element to the list  
+-->
+
