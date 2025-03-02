@@ -33,6 +33,7 @@ function addTask() {
         appendChild adds the newly created <li> as a child to the listContainer element 
             We want it to be displayed under the section with the id "list-container" 
     */
+    inputBox.value = ""; /* Allows search box to be empty */
 
 }
 
