@@ -5,9 +5,6 @@ const inputBox = document.getElementById("input-box");
     In the (HTML) document find the element by ID thus  "getElementById"
 -->
 
-
-
-
 <!--
 Regarding what I did in the JS file: 
 
@@ -46,3 +43,24 @@ li.appendChild(span);
     We attach the newly created <span> element to the list  
 -->
 
+<!--
+listContainer.addEventListener("click", function (e) 
+    addEventListener allows it such that when we do a "click" something happens
+        "click" is not the only option but here we want CLICK 
+    "e" is an event object containing information on what element was clicked 
+
+if (e.target.tagName === "LI") 
+    e.target means the actual element that was clicked on 
+        We are then checking if the clicked element has a tag name of "LI" 
+
+e.target.classList.toggle("checked");
+    it will add the "check" class name and thus generating the checked img
+
+else if (e.target.tagName === "SPAN") 
+    We are checking if the clicked element has tag name of "SPAN" 
+
+e.target.parentElement.remove();
+    yes then it will remove the text 
+        parentElement is the <li> element
+
+-->
