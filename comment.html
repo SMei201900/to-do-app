@@ -1,12 +1,10 @@
 <!--
+Regarding what I did in the JS file: 
+
 const inputBox = document.getElementById("input-box");
     create a variable named "input box" 
         The variable is constant aka unchanging. 
     In the (HTML) document find the element by ID thus  "getElementById"
--->
-
-<!--
-Regarding what I did in the JS file: 
 
 let li = document.createElement("li"); 
     "let" is how we declare a variable in JS 
@@ -24,9 +22,6 @@ listContainer.appendChild(li);
     appendChild adds the newly created <li> as a child to the listContainer element 
         We want it to be displayed under the section with the id "list-container" 
 
--->
-
-<!--
 let span = document.createElement("span");
     We create a variable called "span"
     We set its value to create an element called "span" aka <span>
@@ -41,9 +36,7 @@ span.innerHTML = "\u00d7";
 
 li.appendChild(span);
     We attach the newly created <span> element to the list  
--->
 
-<!--
 listContainer.addEventListener("click", function (e) 
     addEventListener allows it such that when we do a "click" something happens
         "click" is not the only option but here we want CLICK 
@@ -62,5 +55,14 @@ else if (e.target.tagName === "SPAN")
 e.target.parentElement.remove();
     yes then it will remove the text 
         parentElement is the <li> element
+
+function saveData() 
+    We create a function called saveData 
+
+localStorage.setItem("data", listContainer.innerHTML);
+    localStorage is a JS object that allows me to store data in the browser's local storage
+        Meaning if I were to close the tab and then reopen, the content should still be there 
+    "data" is a key; it allows us to retrieve the data later
+    "listContainer.innerHTML" is the value we are saving 
 
 -->

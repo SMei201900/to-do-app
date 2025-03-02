@@ -17,11 +17,12 @@
     
     
 .toDoApp h2 {
-    color: #002765;
+    color: #000;
     display: flex; /*for aligning */
     align-items: center;
     margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
 }
     
     
@@ -108,6 +109,10 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+
+button:hover{
+    color:#000;
 }
 
 
