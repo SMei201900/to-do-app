@@ -76,6 +76,19 @@ ul li::before{ /*li::before allows me to add stuff BEFORE li*/
     left: 8px;
 }
 
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image:url(images/checked.png);
+}
+
+
+
+
+
 
 
 
